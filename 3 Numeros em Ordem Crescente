@@ -1,0 +1,33 @@
+#include<iostream>
+#include<stdio.h>
+#include<stdlib.h>
+
+using namespace std;
+
+int main(){
+	int num1, num2, num3, tpm;
+	
+	cin >> num1;
+	cin >> num2;
+	cin >> num3;
+	
+	if(num1 > num3){
+		tpm = num3;
+		num3 = num1;
+		num1 = tpm;
+	}
+	if(num1 > num2){
+		tpm = num2;
+		num2 = num1;
+		num1 = tpm;
+	}
+	if(num2 > num3){
+		tpm = num3;
+		num3 = num2;
+		num2 = tpm;
+	}
+	cout << num1 << endl;
+	cout << num2 << endl;
+	cout << num3 << endl;
+	return 0;
+}
