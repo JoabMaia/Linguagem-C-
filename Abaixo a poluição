@@ -1,0 +1,25 @@
+#include<iostream>
+#include<stdio.h>
+#include<stdlib.h>
+
+using namespace std;
+
+int main(){
+	int numero=0, contador=0, diferenca;
+	float valor, soma_valores=0;
+	
+	while(numero != 999){
+		cin >> numero;
+		
+		if(numero > 2 && numero != 999){
+			contador += 1;
+			diferenca = numero - 2;
+			valor = diferenca * 12.89;
+			soma_valores += valor;
+		}
+	}
+	cout << soma_valores << endl;
+	std::cout.precision(2);
+	std::cout << std::fixed << contador << endl;
+	return 0;
+}
