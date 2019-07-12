@@ -1,0 +1,22 @@
+#include<iostream>
+#include<stdio.h>
+#include<stdlib.h>
+
+using namespace std;
+
+int main(){
+	float valor;
+	
+	cin >> valor;
+	
+	if(valor < 7.0){
+		cout << "Acida";
+	}
+	else if(valor == 7.0){
+		cout << "Neutra";
+	}
+	else if(valor > 7.0){
+		cout << "Basica";
+	}
+	return 0;
+}
