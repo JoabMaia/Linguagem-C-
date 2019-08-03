@@ -1,0 +1,30 @@
+#include<iostream>
+#include<stdio.h>
+#include<stdlib.h>
+
+using namespace std;
+
+int main(){
+	double valor1, valor2, valor3, media;
+	int cont=0;
+	
+	cin >> valor1;
+	cin >> valor2;
+	cin >> valor3;
+	
+	media = (valor1+valor2+valor3)/3;
+	
+	if(valor1>media){
+		cont+=1;
+	}
+	if(valor2>media){
+		cont+=1;
+	}
+	if(valor3>media){
+		cont+=1;
+	}
+  
+	cout << cont << endl;
+	
+	return 0;
+}
