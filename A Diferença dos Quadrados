@@ -1,0 +1,22 @@
+#include<iostream>
+#include<stdio.h>
+#include<stdlib.h>
+
+using namespace std;
+
+int main(){
+	int x1=1, y;
+	while(x1>0){
+		cin >> x1;
+		if(x1>0){
+			y=(int)x1/2;
+			y+=1;
+			cout << y*y << " " << "-" << " " << (y-1)*(y-1) << endl;
+		}
+		else{
+			break;
+		}
+	}
+	
+	return 0;
+}
