@@ -1,0 +1,19 @@
+#include<iostream>
+#include<stdio.h>
+#include<stdlib.h>
+
+using namespace std;
+
+int main(){
+	int quantidade, quilometragem;
+	float valor;
+	cin >> quantidade;
+	cin >> quilometragem;
+	
+	valor = quantidade * 90;
+    if(quilometragem > quantidade * 100)
+        valor = valor + ((quilometragem-(quantidade*100))*12);
+        std::cout.precision(2);
+		std::cout << std::fixed << valor << endl;
+	return 0;
+}
