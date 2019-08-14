@@ -1,0 +1,22 @@
+#include<iostream>
+#include<stdio.h>
+#include<stdlib.h>
+#include <math.h>
+
+using namespace std;
+
+int main(){
+	int quantosdias, quantosquilometros;
+	double resultado, arredonda_p_cima;
+	
+	cin >> quantosdias;
+	cin >> quantosquilometros;
+	
+  resultado = (((quantosdias * 30) + (quantosquilometros * 0.01)) * 0.9);
+    
+  std::cout.precision(2);
+  arredonda_p_cima = ceil(resultado);
+	std::cout << std::fixed << resultado << endl;
+	
+	return 0;
+}
