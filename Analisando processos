@@ -1,0 +1,18 @@
+#include<iostream>
+#include<stdio.h>
+#include<stdlib.h>
+
+using namespace std;
+
+int main(){
+	 
+	int minuto, resultado;
+	
+	cin >> minuto;
+	
+	resultado = ((60/minuto) * 8);
+	
+	cout << resultado;
+	
+  return 0;
+}
