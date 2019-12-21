@@ -1,0 +1,30 @@
+#include<iostream>
+#include<stdio.h>
+#include<stdlib.h>
+
+using namespace std;
+
+main(void){
+
+    int Interface_grafica,Inteligencia_Artificial,Encapsulamento,Indentacao,Uso_de_Structs, contador = 0;
+
+    cin >> Interface_grafica;
+	  cin >> Inteligencia_Artificial;
+	  cin >> Encapsulamento;
+	  cin >> Indentacao;
+	  cin >> Uso_de_Structs;
+	
+    if(Interface_grafica == 1 || Inteligencia_Artificial == 1){
+        contador ++;}
+    if(Encapsulamento == 1 && Indentacao == 1){
+        contador ++;}
+    if(Uso_de_Structs == 1){
+        contador ++;}
+    if(contador >= 3){
+        cout << "AVALIADO" << endl;
+    }
+    else{
+        cout << 0 << endl;
+    }
+    return 0;
+}
