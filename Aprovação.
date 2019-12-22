@@ -1,0 +1,42 @@
+#include<iostream>
+#include<stdio.h>
+#include<stdlib.h>
+
+using namespace std;
+
+int main(){
+		
+	float nota1, nota2, nota3, media;
+	
+	cin >> nota1;
+	cin >> nota2;
+	cin >> nota3;
+	
+	media = (nota1 + nota2 + nota3) / 3;
+	
+	if (media >= 7.0){
+		cout << "Informe a primeira nota:" << endl;
+	  	cout << "Informe a segunda nota:" << endl;
+	  	cout << "Informe a terceira nota:" << endl;
+	  	std::cout.precision(1);
+	  	std::cout << std::fixed << "Aprovado com media " << media << endl;
+	
+	}
+	else if(media >= 5.0 && media < 7.0){
+	
+	  	cout << "Informe a primeira nota:" << endl;
+		cout << "Informe a segunda nota:" << endl;
+	  	cout << "Informe a terceira nota:" << endl;
+	  	std::cout.precision(1);
+	  	std::cout << std::fixed << "Recuperacao com media " << media << endl;
+	}
+	else if(media < 5.0){
+	  	cout << "Informe a primeira nota:" << endl;
+		cout << "Informe a segunda nota:" << endl;
+		cout << "Informe a terceira nota:" << endl;
+	  	std::cout.precision(1);
+	  	std::cout << std::fixed << "Reprovado com media " << media << endl;
+	}
+
+	return 0;
+}
