@@ -1,0 +1,25 @@
+#include<iostream>
+#include<stdio.h>
+#include<stdlib.h>
+
+using namespace std;
+
+int main(){
+
+    int avela, caramelo, passas, preco_avela, preco_caramelo, preco_passas;
+    double resultado;
+    
+    cin >> avela;
+    cin >> caramelo;
+    cin >> passas;
+    cin >> preco_avela;
+    cin >> preco_caramelo;
+    cin >> preco_passas;
+
+    resultado = (avela * preco_avela) + (caramelo * preco_caramelo) + (passas * preco_passas);
+    
+    std::cout.precision(2);
+    std::cout << std::fixed << "Valor: R$" << resultado;
+
+    return 0;
+}
