@@ -1,0 +1,31 @@
+#include<stdio.h>
+#include<iostream>
+#include<stdlib.h>
+#include<string.h>
+
+using namespace std;
+
+int main(){
+
+    double portugues1, matematica1, redacao1, aprovado_portugues, aprovado_matematica, aprovado_redacao;
+    int aprovado=0;
+
+    cin >> portugues1;
+
+    while(portugues1>0){
+        cin >> matematica1;
+        cin >> redacao1;
+
+        aprovado_portugues = portugues1;
+        aprovado_matematica = matematica1;
+        aprovado_redacao = redacao1;
+
+        if(aprovado_portugues>=40 && aprovado_matematica>=21 && aprovado_redacao>=7){
+            aprovado += 1;
+        }
+        cin >> portugues1;
+    }
+    printf("%d", aprovado);
+
+    return 0;
+}
