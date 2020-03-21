@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<iostream>
+#include<string.h>
+
+using namespace std;
+
+int main(){
+
+    char string1[50], string2[50];
+
+    cin >> string1;
+    cin >> string2;
+
+    if(strcasecmp(string1, string2)==0){
+        printf("IGUAIS\n");
+    }
+    else{
+        printf("DIFERENTES\n");
+    }
+
+    return 0;
+}
